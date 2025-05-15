@@ -20,7 +20,7 @@ This repository provides datasets and examples for evaluating consensus-reaching
 
 ## 📄 File Format
 
-### Initial Opinions and Emotions (`*_data.pkl`)
+### 1. Initial Opinions and Emotions (`*_data.pkl`)
 
 Each `.pkl` file stores a dictionary with two keys:
 - `"opinions"`: a NumPy array of shape `(num_layers, num_experts, num_alternatives, num_aspects)`  
@@ -35,6 +35,7 @@ with open(data_name + "_data.pkl", "rb") as f:
 
 opinions = data["opinions"]
 emotions = data["emotions"]
+```
 
 ### 2. Multi-layer Network Structure (`*_multilayer_network.npz`)
 
