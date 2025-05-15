@@ -1,18 +1,18 @@
-# Multi-layer Social Network Consensus Dataset
+# Multi-layer Social Network Consensus Data set
 
-This repository provides datasets and examples for evaluating consensus-reaching models on multi-layer social networks. The data includes synthetic and real-world inspired network structures, as well as corresponding initial opinions and emotions of decision-makers.
+This repository provides data sets and examples for evaluating consensus-reaching models on multi-layer social networks. The data includes synthetic and real-world inspired network structures, as well as corresponding initial opinions and emotions of decision-makers.
 
 ---
 
 ## 📁 Directory Overview
 
 - `Illustrative Example/`:  
-  Contains one example dataset used for demonstrating the consensus-reaching process. It includes:
+  Contains one example data set used for demonstrating the consensus-reaching process. It includes:
   - A `.pkl` file with initial opinions and emotions of all decision-makers.
   - A `.npz` file with the adjacency matrices of the multi-layer social network.
 
 - `Comparison Experiment/`:  
-  Includes three benchmark datasets representing different real-world inspired multi-layer social networks used in comparison experiments. Each dataset has:
+  Includes three benchmark data sets representing different real-world inspired multi-layer social networks used in comparison experiments. Each data set has:
   - A `_data.pkl` file storing initial opinions and emotions.
   - A `_multilayer_network.npz` file storing the network structure.
 
