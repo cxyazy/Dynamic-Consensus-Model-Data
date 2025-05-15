@@ -30,9 +30,11 @@ Each `.pkl` file stores a dictionary with two keys:
 ```python
 import pickle
 
+# Load the data file
 with open(data_name + "_data.pkl", "rb") as f:
     data = pickle.load(f)
 
+# Extract opinion and emotion data of all decision makers
 opinions = data["opinions"]
 emotions = data["emotions"]
 ```
