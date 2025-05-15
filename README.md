@@ -60,6 +60,7 @@ data = np.load(data_name + "_multilayer_network.npz")
 adj_matrices = [data[f"adj_layer_{i}"] for i in range(len(data.files))]
 ```
 
+---
 ## 📬 Contact & Citation
 
 If you have any questions regarding the data set or encounter any issues using it, feel free to contact us:
