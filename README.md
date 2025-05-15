@@ -23,8 +23,8 @@ This repository provides datasets and examples for evaluating consensus-reaching
 ### Initial Opinions and Emotions (`*_data.pkl`)
 
 Each `.pkl` file stores a dictionary with two keys:
-- `"opinions"`: a NumPy array of shape `(num_experts, num_alternatives, num_aspects)`  
-- `"emotions"`: a NumPy array of shape `(num_experts,)` (values range from -1 to 1)
+- `"opinions"`: a NumPy array of shape `(num_layers, num_experts, num_alternatives, num_aspects)`  
+- `"emotions"`: a NumPy array of shape `(num_layers, num_experts)` (values range from -1 to 1)
 
 #### Example loading code:
 ```python
@@ -35,3 +35,27 @@ with open(data_name + "_data.pkl", "rb") as f:
 
 opinions = data["opinions"]
 emotions = data["emotions"]
+
+### 2. Multi-layer Network Structure (`*_multilayer_network.npz`)
+
+Each `.npz` file contains adjacency matrices for a multi-layer social network.  
+Each layer is stored as a separate 2D NumPy array representing the adjacency matrix of that layer. The networks are undirected and may be weighted or unweighted depending on generation settings.
+
+- `adj_layer_0`: adjacency matrix for layer 0  
+- `adj_layer_1`: adjacency matrix for layer 1  
+- ...  
+- `adj_layer_L`: adjacency matrix for layer L
+
+#### Example loading code:
+```python
+import numpy as np
+
+# Load the multi-layer network file
+data = np.load(data_name + "_multilayer_network.npz")
+
+# Extract all adjacency matrices in order
+adj_matrices = [data[f"adj_layer_{i}"] for i in range(len(data.files))]
+
+# Example: print shape of each layer's adjacency matrix
+for i, adj in enumerate(adj_matrices):
+    print(f"Layer {i}: shape = {adj.shape}")
