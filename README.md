@@ -56,7 +56,3 @@ data = np.load(data_name + "_multilayer_network.npz")
 
 # Extract all adjacency matrices in order
 adj_matrices = [data[f"adj_layer_{i}"] for i in range(len(data.files))]
-
-# Example: print shape of each layer's adjacency matrix
-for i, adj in enumerate(adj_matrices):
-    print(f"Layer {i}: shape = {adj.shape}")
