@@ -58,3 +58,24 @@ data = np.load(data_name + "_multilayer_network.npz")
 
 # Extract all adjacency matrices in order
 adj_matrices = [data[f"adj_layer_{i}"] for i in range(len(data.files))]
+```
+
+## 📬 Contact & Citation
+
+If you have any questions regarding the data set or encounter any issues using it, feel free to contact us:
+
+- 📫 **Contact**: 230239729@seu.edu.cn
+
+If you use this data set in your research, please cite the following paper:
+
+> **Dynamic Consensus Model for Large-scale Group Decision-making Considering the Co-evolution of Opinions and Emotions in Multi-layer Social Network**  
+> Zhengyi An, et al.  
+
+### BibTeX citation:
+```bibtex
+@article{An2025Dynamic,
+  title   = {Dynamic Consensus Model for Large-scale Group Decision-making Considering the Co-evolution of Opinions and Emotions in Multi-layer Social Network},
+  author  = {Zhengyi An, Xianghui Hu and Yichuan Jiang},
+  journal = {XXXXXX},
+  year    = {2025}
+}
