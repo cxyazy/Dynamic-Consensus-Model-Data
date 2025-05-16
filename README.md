@@ -1,4 +1,4 @@
-# Multi-layer Social Network Consensus Data set
+# Multi-layer Social Network Consensus Data Set
 
 This repository provides data sets and examples for evaluating consensus-reaching models on multi-layer social networks. The data includes synthetic and real-world inspired network structures, as well as corresponding initial opinions and emotions of decision-makers.
 
