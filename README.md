@@ -42,7 +42,7 @@ emotions = data["emotions"]
 ### 2. Multi-layer Network Structure (`*_multilayer_network.npz`)
 
 Each `.npz` file contains adjacency matrices for a multi-layer social network.  
-Each layer is stored as a separate 2D NumPy array representing the adjacency matrix of that layer. The networks are undirected and may be weighted or unweighted depending on generation settings.
+Each layer is stored as a separate 2D NumPy array representing the adjacency matrix of that layer.
 
 - `adj_layer_0`: adjacency matrix for layer 0  
 - `adj_layer_1`: adjacency matrix for layer 1  
