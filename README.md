@@ -74,7 +74,7 @@ If you use this data set in your research, please cite the following paper:
 
 ### BibTeX citation:
 ```bibtex
-@article{An2025Dynamic,
+@article{An20XXDynamic,
   title   = {Dynamic Consensus Model for Large-scale Group Decision-making Considering the Co-evolution of Opinions and Emotions in Multi-layer Social Network},
   author  = {Zhengyi An, Xianghui Hu and Yichuan Jiang},
   journal = {XXXXXX},
