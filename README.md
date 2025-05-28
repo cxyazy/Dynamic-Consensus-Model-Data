@@ -8,8 +8,8 @@ This repository provides data sets and examples for evaluating consensus-reachin
 
 - `Illustrative Example/`:  
   Contains one example data set used for demonstrating the consensus-reaching process. It includes:
-  - A `.pkl` file with initial opinions and emotions of all decision-makers.
-  - A `.npz` file with the adjacency matrices of the multi-layer social network.
+  - A `_data.pkl` file with initial opinions and emotions of all decision-makers.
+  - A `_multilayer_network.npz` file with the adjacency matrices of the multi-layer social network.
 
 - `Comparison Experiment/`:  
   Includes three benchmark data sets representing different real-world inspired multi-layer social networks used in comparison experiments. Each data set has:
@@ -78,5 +78,5 @@ If you use this data set in your research, please cite the following paper:
   title   = {Dynamic Consensus Model for Large-scale Group Decision-making Considering the Co-evolution of Opinions and Emotions in Multi-layer Social Network},
   author  = {Zhengyi An, Xianghui Hu and Yichuan Jiang},
   journal = {XXXXXX},
-  year    = {2025}
+  year    = {20XX}
 }
